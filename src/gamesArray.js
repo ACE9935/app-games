@@ -1,7 +1,7 @@
 export const gamesArray = [
     {
       name: "Hangman",
-      image: "./game1.png", // Replace with actual image URL
+      image: "./wp.png", // Replace with actual image URL
       description: "A classic word-guessing game where players try to guess a hidden word by suggesting letters."
     },
     {
