@@ -3,12 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.11",
+    "@mui/material": "^5.15.11",
+    "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^11.0.6",
+    "gsap": "^3.12.5",
+    "immer": "^10.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
+    "react-redux": "^9.1.0",
     "react-scripts": "5.0.1",
+    "scss": "^0.2.4",
+    "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +46,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.21",
+    "@types/react": "^18.2.60",
+    "@types/react-dom": "^18.2.19",
+    "sass": "^1.71.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
   }
 }

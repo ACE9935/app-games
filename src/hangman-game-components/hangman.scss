@@ -1,0 +1,107 @@
+@import url('https://fonts.cdnfonts.com/css/canavar');
+
+.hmg{
+.g-container{
+  background-color: rgb(108, 156, 210);
+  border: 2px solid rgb(225, 207, 207);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: 'CANAVAR', sans-serif;
+}
+.App{
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+.keyboard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ /* Creates 10 columns with equal width */
+ max-width: 570px;
+  gap: 10px;
+  
+}
+button{
+  all: unset;
+  padding: 15px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 1px white solid;
+  cursor: pointer;
+}
+.k-button{
+  padding: unset;
+  width: 40px;
+  height: 40px;
+}
+button:hover{
+  background-color: rgb(156, 180, 253);
+}
+button:active{
+  background-color: rgb(52, 84, 181);
+}
+
+button:disabled{
+  all:unset;
+  user-select: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px white solid;
+  background-color: lightslategray;
+  opacity: 0.7;
+}
+.word{
+  display: flex;
+  gap: 10px;
+}
+.word>div{
+  display: grid;
+  place-items: center;
+  background-color: rgb(231, 200, 0);
+  border: 2px black solid;
+  font-size: 20px;
+  width: 40px;
+  aspect-ratio: 1;
+}
+.word>.spacer{
+  display: grid;
+  place-items: center;
+  background: none !important;
+  border: none !important;
+  width: 40px;
+  aspect-ratio: 1;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+svg>*{
+  stroke-width: 0!important;
+}
+/* Apply the animation to the path element */
+.path {
+  stroke-width: 4!important;
+  stroke-dasharray: 1000; /* Set to the total length of your path */
+  stroke-dashoffset: 1000; /* Set to the total length of your path */
+  animation: draw 3s ease forwards; /* Adjust duration and timing function as needed */
+}
+}
+
