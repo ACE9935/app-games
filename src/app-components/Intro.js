@@ -78,6 +78,7 @@ function Intro({setPage}) {
        whileInView={"animate"}
        viewport={{ once: true }}
       variants={variants3} style={{backgroundImage:i%2==0?'url("./banner.jpg")':'url("./banner2.jpg")'}} key={i} className='flex cursor-pointer overflow-hidden bg-contain flex-col md:flex-row md:even:flex-row-reverse gap-8 p-4 rounded-xl items-center w-full justify-between max-w-[1200px]'>
+        
         <motion.img
         variants={variants1}
         className='w-[300px] aspect-[1] object-cover border-black border-4' src={o.image}/>
