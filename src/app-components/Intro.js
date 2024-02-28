@@ -49,12 +49,12 @@ function Intro({setPage}) {
   }
 
   return (
-      <main className='p-4 md:px-8 max-w-[1400px]'>
+      <main className='p-4 md:px-8 w-full grid place-items-center'>
     <section 
     style={{backgroundImage:"url('/wp.png')",
     backgroundSize:"340px 340px"
     }}
-    className='w-full pt-4 rounded-xl bg-red-400 relative overflow-hidden gap-4 flex flex-col md:flex-row justify-between px-4 font-["Bubblegum_Sans"]'>
+    className='w-full max-w-[1400px] pt-4 rounded-xl bg-red-400 relative overflow-hidden gap-4 flex flex-col md:flex-row justify-between px-4 font-["Bubblegum_Sans"]'>
       <motion.div
       transition={{duration:1,
         type:'spring'
@@ -83,7 +83,7 @@ function Intro({setPage}) {
         className='w-[300px] aspect-[1] object-cover border-black border-4' src={o.image}/>
         <motion.div
         variants={variants2}
-        className='h-fit p-4 border-4 border-black bg-white max-w-[700px]'>
+        className='h-fit p-4 border-4 border-black bg-white max-w-[750px]'>
           <h1 className='text-5xl text-red-400 pb-4 font-bold'>{o.name}</h1>
           <p className='text-3xl font-bold pb-2'>{o.description}</p>
           <div className='flex gap-3'>

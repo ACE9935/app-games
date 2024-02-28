@@ -16,9 +16,9 @@ function GamesWrapper() {
   const dispatch=useDispatch()
   const pages=[<Intro setPage={setPage}/>,<HangmanGame/>,<TypeRacerGame/>,<MatchGame/>,<RPSGame/>]
   return (
-    <>
+    <div>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet"></link>
-    <div className={page>0&&'grid place-items-center min-h-screen'}>
+    <div className='grid place-items-center min-h-screen'>
       {page>0&&<div className='absolute top-0 left-0 m-2 flex flex-col gap-3'><ArrowBackIcon
       style={{fontSize:60,
         opacity:!waitForComputer?1:0.4
@@ -31,7 +31,7 @@ function GamesWrapper() {
       }
     {pages[page]}
     </div>
-    </>
+    </div>
   );
 }
 
