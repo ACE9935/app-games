@@ -4,13 +4,12 @@ import Timer from "./Timer";
 import PlayBar from "./PlayBar";
 import { setReset, setStart, setWin } from "../app-state/typeracerSlice";
 import { useDispatch,useSelector } from 'react-redux';
+import { quotes } from "../quotes";
 
 
 const fetchQuote = async () => {
-   let res = await fetch("https://api.quotable.io/random");
-   res=await res.json();
-
-   return res.content
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  return quotes[randomIndex];
  };
 
 function TypeRacerGame() {
