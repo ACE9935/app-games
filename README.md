@@ -4,6 +4,12 @@
 
 ---
 
+## 🌐 Live Demo
+- **Live Demo**: [https://app-games-coral.vercel.app/](https://app-games-coral.vercel.app/)
+- **GitHub Repo**: [https://github.com/ACE9935/app-games/tree/master](https://github.com/ACE9935/app-games/tree/master)
+
+---
+
 ## 🕹️ Mini-Games
 
 ### 🧩 Hangman
