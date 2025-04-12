@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# app-games 🎮
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**app-games** is a fun and interactive platform offering 4 mini-games to test your skills and reflexes. Built with React, it allows users to play games like **Rock-Paper-Scissors**, **Hangman**, **Memorization Game**, and **Type Racer** all in one place. Whether you're looking to challenge yourself or just kill time, this app has something for everyone!
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🕹️ Mini-Games
 
-### `npm start`
+### 🧩 Hangman
+**Hangman** is a classic word-guessing game where the player has to guess a hidden word by suggesting letters. With each incorrect guess, a part of the stick figure is drawn. If the player guesses the word before the figure is fully drawn, they win!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ⌨️ Type Racer
+**Type Racer** is a fast-paced typing game where the goal is to type a passage as quickly and accurately as possible. The faster you type, the better your score! Test your typing speed and accuracy while racing against time.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🧠 Memorization Game
+**Memorization Game** is a challenging game where the player needs to match pairs of items on a grid. You can choose to play solo or against the computer, with the option of selecting grid sizes.
+  - The computer opponent gets smarter as the difficulty increases (easy, normal, and hard). 
+  - At higher difficulty levels, the computer starts remembering previously revealed spots and tries to find duplicates in the grid to maximize its chances of winning.
+  - The algorithm the computer uses ensures it avoids random spots, focusing on spots it has already revealed, making it more difficult at higher levels. The game helps improve your memory and concentration.
 
-### `npm test`
+### ✊ Rock-Paper-Scissors
+**Rock-Paper-Scissors** is the well-known hand game where rock beats scissors, scissors beats paper, and paper beats rock. In this version, you can play against the computer, and it features a set number of rounds to test your skill and luck!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ State Management
+Each game has a saving system powered by **Redux**. The global app state tracks the progress of each game, and users can hop between games without losing their progress. However, please note that progress is lost upon page reload or close, as all saved data is stored in the session.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Tech Stack
+- **Frontend**: React
+- **State Management**: Redux
+- **No Backend**: Entirely client-side app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run the project locally:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/ACE9935/app-games.git
+cd app-games
