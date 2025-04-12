@@ -16,7 +16,9 @@
 **Memorization Game** is a challenging game where the player needs to match pairs of items on a grid. You can choose to play solo or against the computer, with the option of selecting grid sizes.
   - The computer opponent gets smarter as the difficulty increases (easy, normal, and hard). 
   - At higher difficulty levels, the computer starts remembering previously revealed spots and tries to find duplicates in the grid to maximize its chances of winning.
-  - The algorithm the computer uses ensures it avoids random spots, focusing on spots it has already revealed, making it more difficult at higher levels. The game helps improve your memory and concentration.
+  - The algorithm the computer uses ensures it avoids random spots, focusing on spots it has already revealed, making it more difficult at higher levels. The difficulty simply controls how fast the computer remembers the discovered spots. For example, at **hard** difficulty, the computer remembers 100% of discovered spots.
+  
+  For more details about how the computer algorithm works, check out the implementation in this [Matchcomputer.js file](https://github.com/ACE9935/app-games/blob/master/src/app-state/Matchcomputer.js).
 
 ### ✊ Rock-Paper-Scissors
 **Rock-Paper-Scissors** is the well-known hand game where rock beats scissors, scissors beats paper, and paper beats rock. In this version, you can play against the computer, and it features a set number of rounds to test your skill and luck!
